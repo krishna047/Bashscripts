@@ -1,0 +1,8 @@
+#!/bin/bash
+# Example script to show how sourcing works
+
+. /root/sourceme
+
+echo the value of the variable '$COLOR' is $COLOR
+
+exit 1
