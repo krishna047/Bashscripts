@@ -7,5 +7,5 @@ echo which directory you want to list
 read DIR
 
 cd $DIR
-ls -l
+ls -l $DIR
 
