@@ -1,6 +1,7 @@
 #!/bin/bash
 #Scripts with different arguements
 
+#Author:Krishna M Venkataraman
 echo "\$* gives $*"
 echo "\$# gives $#"
 echo "\$@ gives $@"

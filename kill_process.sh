@@ -1,6 +1,7 @@
 #!/bin/bash
 #Script to kill process
 #Author : Krishna M Venkataraman
+#Author:Krishna M Venkataraman
 #All rights Reservered
 #version 0.0.0.1
 

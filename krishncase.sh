@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "Please talk to me ..."
+#Author:Krishna M Venkataraman
 while :
 do
   read INPUT_STRING

@@ -1,6 +1,7 @@
 #!/bin/bash
 read -p "Enter number for X:" X
 read -p "Enter number for Y:" Y
+#Author:Krishna M Venkataraman
 if (( $X > $Y ))
 then
     echo "X $X is greater than Y $Y"

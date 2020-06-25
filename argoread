@@ -1,6 +1,7 @@
 #!/bin/bash
 #Argument Read
 #Script to make sure user input is provided
+#Author:Krishna M Venkataraman
 
 if [ -z $1 ]
 then

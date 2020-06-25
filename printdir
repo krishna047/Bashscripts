@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 #List the directory
+#Author:Krishna M Venkataraman
 
 echo which directory you want to list
 
