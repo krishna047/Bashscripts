@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#List the directory
+
+echo which directory you want to list
+
+read DIR
+
+cd $DIR
+ls -l
+
