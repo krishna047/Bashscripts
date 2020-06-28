@@ -1,0 +1,14 @@
+#!/bin/bash
+#Author : Krishna M Venkataraman
+
+if [[ -z $1 ]]
+then
+	read -p "Please provide the filename" FILENAME
+else
+	FILENAME="$@"
+fi
+
+for i in $FILENAME
+do
+cp $i $HOME
+done
