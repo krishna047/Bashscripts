@@ -13,5 +13,5 @@ COUNTER=0
 for i in *;
 do
 COUNTER=$((COUNTER+1))
-echo "I have found $COUNTER files in the $DIR"
 done
+echo "I have found $COUNTER files in the $DIR"
