@@ -1,0 +1,16 @@
+#!/bin/bash
+
+J = $1
+#J = $2
+
+if [[ -z $1 ]]
+then
+#read -p "Enter the starting range of ip" K
+read -p "Enter the number of range" J
+fi
+
+for i in {1..$J}; 
+do 
+ping -c 1 192.168.0.$i >/dev/null && echo 192.168.0.$i is available;
+done
+

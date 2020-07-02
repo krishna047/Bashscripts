@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo Checking if the file or directory
+
+#if [[ -f $1 ]]
+#then
+#	echo $1 is a file
+#elif [[ -d $1 ]]
+#then
+#	echo $1 is a directory
+#else [[ -z $1 ]]
+#	echo No input provided
+#fi
+
+#Alternative using && and ||
+
+[[ -f $1 ]] && echo $1 is a file  
+[[ -d $1 ]] && echo $1 is a directory
+[[ -z $1 ]] && echo No input provided
