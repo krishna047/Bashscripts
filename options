@@ -1,0 +1,21 @@
+#!/bin/bash
+#Scripts that create users using preffered options
+#Usage: Use -a to add a home directory
+#	Use -b to make the user member of group 100
+#	Use -c to specify the custom shell. This option is followed the shell name
+
+while getopts "abc:" opt
+do
+case $opt in
+	a ) VAR1=-m;;
+	b ) VAR2="-g 100";;
+	c ) VAR3="-s $OPTARG";;
+	* ) echo "Usage: makeuser [-a] [-b] [-c shell] username"
+esac
+done
+
+echo The current argument are set to $*
+shift $((OPTIND -1))
+echo now the currrent argument are set to $*
+echo useradd $VAR1 $VAR2 $VAR3 $1
+exit 0 

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+VAR=$1
+
+if [[ -z $1 ]]
+then
+read -p "Please type your choice yes|y|YES or no|n|NO :" VAR
+fi
+
+case $VAR in 
+	yes|y|YES)
+	echo "Input is ok"
+	echo "Welcome to Hello World!"
+	;;
+	no|n|NO)
+	echo "Input is not ok"
+	echo -n "Good Bye!"
+	;;
+	*)
+	echo "Please type yes|y|YES or no|n|NO"
+	;;
+esac

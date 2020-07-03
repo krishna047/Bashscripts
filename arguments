@@ -1,6 +1,8 @@
 #!/bin/bash
+#Author:Krishna M Venkataraman
+
+
 
 echo "Hello $1 How are you?"
-#Author:Krishna M Venkataraman
 echo "Hello $2 How are you?"
 echo "Hello $3 How are you?"

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+number=$1
+
+if [[ -z $1 ]]
+then
+	read -p "Enter the Number range to print:" number
+fi
+
+for i in $(seq $number $end);
+do
+echo $i
+done
+
