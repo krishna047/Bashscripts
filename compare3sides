@@ -1,0 +1,27 @@
+read x
+read y
+read z
+
+if (( $x == $y));
+then
+    if (( $y == $z));
+    then
+       echo "EQUILATERAL"
+    fi
+    if (( ! $y == $z));
+    then
+       echo "ISOSCELES"
+    fi
+fi
+
+if (( ! $x == $y));
+then
+    if (( ! $y == $z));
+    then
+       echo "SCALENE"
+    fi
+    if (( $y == $z));
+    then
+       echo "ISOSCALES"
+    fi
+fi
