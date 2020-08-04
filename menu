@@ -1,0 +1,17 @@
+!/bin/bash
+#Demo script for Interactive Menu
+echo "Select a Directory:"
+
+select DIR in /bin /usr /etc
+do
+	#Only continue if user has selected something
+	if [ -n $DIR ]
+	then
+		DIR=$DIR
+		echo you have selected $DIR
+		export DIR
+		break
+	else
+		echo Invalid Choice
+	fi
+done
