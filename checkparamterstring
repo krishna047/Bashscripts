@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Check $1 is a string"
+
+[[ -z $1 ]] || echo "Its not a string"

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for i in $(cat file)
+do
+	USER=${i%%,*}
+	USER=${USER#*=}
+	echo $USER >> users
+done
+# Show the users in the creation
+
+for i in $(cat  users);
+do
+echo useradd $i
+done
+exit 0

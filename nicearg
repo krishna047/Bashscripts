@@ -1,0 +1,23 @@
+#!/bin/bash
+#Scripts with different arguements
+
+#Author:Krishna M Venkataraman
+echo "\$* gives $*"
+echo "\$# gives $#"
+echo "\$@ gives $@"
+echo "\$0 gives $0"
+
+#Showing Interpreation of \$*
+
+for i in "$*";
+do
+    echo $i
+done
+
+#Showing Interpreation of \$@
+
+for j in "$@";
+do
+    echo $j
+done
+

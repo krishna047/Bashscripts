@@ -1,0 +1,13 @@
+#!/bin/bash
+#Argument Read
+#Script to make sure user input is provided
+#Author:Krishna M Venkataraman
+
+if [ -z $1 ]
+then
+	echo Provide Filenames
+	read -p "Enter file name:" FILENAME 
+else
+	FILENAME="$@"
+fi
+echo the following filenames have been provided: $FILENAME

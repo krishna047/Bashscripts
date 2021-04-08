@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DATE=$(date +%d-%m-%y)
+echo $DATE
+echo "The day is ${DATE:0:2}"
+echo "The Month is ${DATE:4}"
+echo "The year is ${DATE:6:8}"

@@ -1,0 +1,12 @@
+#!/bin/bash
+#Hello World with multiple arguments
+
+#Author:Krishna M Venkataraman
+HELLO="$@"
+
+for i in $HELLO
+do
+echo "Hello world $i"
+done
+exit 1
+

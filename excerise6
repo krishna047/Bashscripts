@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#Menu for user helpdesk
+while true ; do
+	trap "echo NOPE INT" SIGINT
+	pinghost()
+	{
+		read -p "Enter the hostname: " HOSTNAME
+		sudo ping -c 2 $HOSTNAME
+	}
+	select TASK in "Reset Password" "Show disk usage" "Ping a host" "Log Out"
+	do
+		case $REPLY in
+			1)
+				read -p "Enter the username" USER
+				passwd $USER
+				;;
+			2)TASK="du";;
+			3)TASK=pinghost;;
+			4)TASK="exit";;
+			*)echo "Error" & exit 2;;
+		esac
+		if [[ -n "$TASK" ]]
+		then
+			$TASK
+			break
+		else
+			echo "Enter a valid choice"
+		fi
+	done
+done

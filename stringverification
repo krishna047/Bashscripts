@@ -1,0 +1,11 @@
+#!/bin/bash
+#Author: Krishna M Venkataraman
+
+read -p "Enter the string between A-Z" W
+
+if [[ $W=='[a-z]' ]];then
+	echo "$W is word"
+	exit 1
+else
+	echo "Please enter a-Z"
+fi

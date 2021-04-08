@@ -1,14 +1,15 @@
 #!/bin/sh
 
 echo "Please talk to me ..."
+#Author:Krishna M Venkataraman
 while :
 do
   read INPUT_STRING
   case $INPUT_STRING in
-	hello)
+	hello|Hello|HELLO)
 		echo "Hello yourself!"
 		;;
-	bye)
+	bye|BYE|Bye)
 		echo "See you again!"
 		break
 		;;

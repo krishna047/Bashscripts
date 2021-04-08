@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Start of the function
+
+noarg ()
+{
+ echo "You have not provided an argument" 
+ echo "Please specify a filename when executing the script"
+}
+
+if [[ -z $1 ]]; then
+	noarg
+else
+	file $1
+fi
+exit 0 

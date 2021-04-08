@@ -1,0 +1,17 @@
+#!/bin/bash
+
+DIR=$1
+
+if [[ -z $1 ]]
+then
+	read -p " Which Directory you want to count?" DIR
+fi
+
+cd $DIR
+COUNTER=0
+
+for i in *;
+do
+COUNTER=$((COUNTER+1))
+done
+echo "I have found $COUNTER files in the $DIR"

@@ -1,6 +1,7 @@
 #!/bin/sh
 echo "Tell me what do you want to do"
 while :
+#Author:Krishna M Venkataraman
 do
    read -p "Enter number 10 or 25 or q or anynumber:" x
    case $x in
